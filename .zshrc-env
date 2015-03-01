@@ -1,4 +1,13 @@
 # zshell environment variables
 
+# EXPORTS #
+export DEV_HOME=~/Develop
+# NVM #
 export NVM_DIR="/Users/alan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# ANT #
+ANT_HOME="$DEV_HOME/apache-ant-1.9.4"
+[ -d $ANT_HOME ] && export ANT_HOME && export PATH=$PATH:$ANT_HOME/bin
+# ANDROID #
+ANDROID_HOME="$DEV_HOME/android-sdk-macosx"
+[ -d $ANDROID_HOME ] && export ANDROID_HOME && export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
