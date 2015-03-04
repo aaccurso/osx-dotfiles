@@ -1,6 +1,6 @@
 [user]
-email = accurso.alan@gmail.com
-name = aaccurso
+	email = accurso.alan@gmail.com
+	name = aaccurso
 [credential]
 helper = store
 [color]
@@ -9,8 +9,12 @@ ui = auto
 default = simple
 [diff]
 algorithm = patience
-# external = meld
-[merge]
-tool = meld
 [core]
 editor = vim
+	excludesfile = /Users/alan/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
