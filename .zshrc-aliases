@@ -1,4 +1,5 @@
-# zshell public aliases
+# zshell public aliases and functions
+alias simple-server='python -m SimpleHTTPServer 8000'
 
 function mkcd () {
   mkdir $1 && cd $_
