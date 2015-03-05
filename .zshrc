@@ -81,4 +81,9 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zshrc-aliases
 [[ -f $HOME/.zshrc-aliases-private ]] && source $HOME/.zshrc-aliases-private
 
+# ENV VARIABLES
 source $HOME/.zshrc-env
+
+# PROMPT CURSOR
+PROMPT=$PROMPT"
+""%F{white}"$'⌨  '" "
