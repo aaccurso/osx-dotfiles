@@ -86,4 +86,4 @@ source $HOME/.zshrc-env
 
 # PROMPT CURSOR
 PROMPT=$PROMPT"
-""%F{white}"$'⌨  '" "
+""%F{white}"$'⌨ '" "
