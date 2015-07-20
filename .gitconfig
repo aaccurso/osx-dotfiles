@@ -23,3 +23,5 @@ editor = vim
 [mergetool "diffmerge"]
 	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
 	trustExitCode = true
+[alias]
+	gol = log --graph --pretty=format:'%Cred%h%Creset - %C(blue)%an%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -10
