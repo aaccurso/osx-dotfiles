@@ -1,5 +1,8 @@
 # zshell public aliases and functions
 alias simple-server='python -m SimpleHTTPServer 8000'
+alias gff='git flow feature'
+alias gfr='git flow release'
+alias gfh='git flow hotfix'
 
 function mkcd () {
   mkdir $1 && cd $_
