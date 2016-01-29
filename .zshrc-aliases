@@ -1,8 +1,15 @@
 # zshell public aliases and functions
 alias simple-server='python -m SimpleHTTPServer 8000'
+
+# gitflow
 alias gff='git flow feature'
 alias gfr='git flow release'
 alias gfh='git flow hotfix'
+
+# git
+alias git-fetch-prune='git fetch --all --prune'
+alias git-rm-local-merged-branches='git branch --merged | grep -v "*" | xargs git branch -d'
+alias git-rm-remote-merged-branches='git branch -r --merged | grep -v master | grep -v develop | sed "s/origin\///" | xargs -n 1 git push --delete origin'
 
 function mkcd () {
   mkdir $1 && cd $_
