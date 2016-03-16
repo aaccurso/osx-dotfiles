@@ -30,3 +30,6 @@ function ts_layout () {
   tmux select-pane -t 0 &&
   tmux -2 attach-session -t $1 &&
 }
+function notify () {
+  /usr/bin/osascript -e "display notification \"$*\" sound name \"default\""
+}
