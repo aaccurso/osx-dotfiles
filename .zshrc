@@ -80,9 +80,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.zshrc-aliases
 [[ -f $HOME/.zshrc-aliases-private ]] && source $HOME/.zshrc-aliases-private
-
-# ENV VARIABLES
 source $HOME/.zshrc-env
+source $HOME/.zshrc-hooks
 
 # PROMPT CURSOR
 PROMPT=$PROMPT"

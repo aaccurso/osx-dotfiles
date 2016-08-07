@@ -1,5 +1,6 @@
 # zshell public aliases and functions
 alias simple-server='python -m SimpleHTTPServer 8000'
+alias external-drives='open /Volumes'
 
 # gitflow
 alias gff='git flow feature'
