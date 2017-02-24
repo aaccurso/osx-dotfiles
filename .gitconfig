@@ -25,3 +25,5 @@ editor = vim
 	trustExitCode = true
 [alias]
 	gol = log --graph --pretty=format:'%Cred%h%Creset - %C(blue)%an%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -10
+[status]
+	submoduleSummary = true
